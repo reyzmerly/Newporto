@@ -939,6 +939,17 @@ button {
     align-items: center;
     word-break: break-word;
   }
+  .project-images img {
+    max-width: 90px !important;
+    max-height: 90px !important;
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 12px !important;
+  }
+  .profile-img, .about-profile-img {
+    width: 130px !important;
+    height: 130px !important;
+  }
 }
 
 /* Improve mobile nav overlay for all mobile breakpoints */
