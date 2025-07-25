@@ -921,6 +921,23 @@ button {
     border: 2px solid rgba(255,255,255,0.18);
     z-index: 2;
   }
+  .project-frame {
+    position: relative;
+  }
+  .project-label {
+    position: absolute;
+    left: 0.3rem;
+    top: 0.3rem;
+    z-index: 2;
+  }
+  .project-frame h2 {
+    margin-left: 2.4em;
+    margin-top: 0.2em;
+    min-height: 1.6em;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
 }
 
 /* Improve mobile nav overlay for all mobile breakpoints */
