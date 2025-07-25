@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reyz - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading-overlay">
+      <div class="spinner"></div>
+      <div id="loading-greeting" class="loading-greeting">Welcome</div>
+    </div>
+    <div class="container">
+        <header class="header">
+            <div class="logo">Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <!-- Profile photo centered below nav -->
+        <div class="profile-photo-nav-center" style="display: flex; justify-content: center; margin: 2rem 0;">
+            <aside class="profile-area" aria-label="Profile image">
+                <img src="reyz.jpg" alt="Rey Zmerly profile photo" class="profile-img" />
+            </aside>
+        </div>
+
+        <main class="main-content">
+            <div class="content-left">
+                <div class="algerian-small">Jean Remy R.</div>
+                <h1 class="name">REYZ MERLY</h1>
+                <p class="title">Developer / Designer <br><i>And IT Specialist</i></p>
+                <div class="cta-row">
+                  <a href="contact.html#contact-form" class="cta-button">Contact</a>
+                  <a href="https://drive.google.com/file/d/1Nnm3-jaEsXs-iKEqmQE8xUxMI8U-xh5Y/view?usp=sharing" class="cta-button" target="_blank" rel="noopener">Download CV</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Portfolio Slider Right Aligned Start -->
+        <div class="portfolio-slider-right">
+            <div class="portfolio-container">
+                <div class="portfolio-item" id="portfolioItem">
+                    <!-- Content like image, title, etc. -->
+                    <h2 id="projectTitle" class="portfolio-project-title">Project 1</h2>
+                </div>
+                <div class="portfolio-controls">
+                    <button id="prevBtn" class="portfolio-arrow">&#8592;</button>
+                    <span id="counter">01/06</span>
+                    <button id="nextBtn" class="portfolio-arrow">&#8594;</button>
+                </div>
+                <div class="portfolio-label-container">
+                    <a id="projectLabel" href="projects.html#movik">Movik GoLive</a>
+                </div>
+                <!-- Removed portfolio-thumbnails section -->
+            </div>
+        </div>
+        <!-- Portfolio Slider Right Aligned End -->
+
+        <!-- Remove the profile-area placeholder box below -->
+        <!-- <div class="profile-area">
+            <div class="profile-placeholder">
+                Profile Image<br>
+                <small>300 x 400</small>
+            </div>
+        </div> -->
+
+        <div class="social-section">
+            <div class="social-links">
+                <span class="social-label">SOCIAL</span>
+                <a href="https://github.com/reyzmerly" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/jean-remy-972002183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://x.com/REYZMERLY9?t=qfQtPYzNpKENbfCtcfP8kw&s=08" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+            </div>
+            <div class="updates">
+                <div class="update-item">
+                    <div class="handle">@REYZMERLY</div>
+                    <div class="time">• Just now</div>
+                    <div>Launched my new portfolio site. Check it out and let me know what you think!</div>
+                </div>
+                <div class="update-item">
+                    <div class="handle">@REYZMERLY</div>
+                    <div class="time">• 2 hours ago</div>
+                    <div>Working on some exciting new projects. Stay tuned for updates!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+ <!-- Those codes are protected and cannot be used without permission
+  Please contact @reyzmerly2025 for any questions or inquiries or collaboration : reyzmerly9@gmail.com -->

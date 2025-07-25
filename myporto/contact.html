@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - reyz Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <a id="contact-form"></a>
+        <div class="min-h-screen bg-transparent-800 flex items-center justify-center p-10">
+          <div class="contact-form-container">
+            <form class="contact-form-box">
+              <h2>Send Me a Message</h2>
+              <p class="contact-form-subtext">Fill out the form below and I'll get back to you as soon as possible.</p>
+              <div class="contact-form-row">
+                <div class="contact-form-col left">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" />
+                  </div>
+                </div>
+                <div class="contact-form-col right">
+                  <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="What is this regarding?" />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="7" required placeholder="Tell me about your project or inquiry"></textarea>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="contact-form-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+    </main>
+    <script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    // Do validation or fetch call here
+    alert("Message sent! 🚀");
+    form.reset();
+  });
+</script>
+</body>
+</html> <!-- Those codes are protected and cannot be used without permission
+Please contact @reyzmerly2025 for any questions or inquiries or collaboration : reyzmerly9@gmail.com -->
