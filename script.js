@@ -94,10 +94,14 @@ function updatePortfolio() {
       projectLabel.href = 'projects.html#kora';
       projectLabel.style.pointerEvents = 'auto';
     } else if (currentIndex === 2) {
-      projectLabel.textContent = 'TiGo';
-      projectLabel.href = 'projects.html#tigo';
+      projectLabel.textContent = 'KoraGo';
+      projectLabel.href = 'projects.html#kora';
       projectLabel.style.pointerEvents = 'auto';
-    } else {
+    } else if (currentIndex === 3) {
+      projectLabel.textContent = 'KoraClick';
+      projectLabel.href = 'projects.html#kora';
+      projectLabel.style.pointerEvents = 'auto';
+     } else {
       projectLabel.textContent = '';
       projectLabel.removeAttribute('href');
       projectLabel.style.pointerEvents = 'none';
