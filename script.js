@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Portfolio Slider Script
 const projects = [
   "Project 1",
-  "Project 2",
+  "Project 2", 
   "Project 3",
   "Project 4",
   "Project 5",
@@ -94,14 +94,14 @@ function updatePortfolio() {
       projectLabel.href = 'projects.html#kora';
       projectLabel.style.pointerEvents = 'auto';
     } else if (currentIndex === 2) {
-      projectLabel.textContent = 'KoraGo';
-      projectLabel.href = 'projects.html#kora';
+      projectLabel.textContent = 'TiGo';
+      projectLabel.href = 'projects.html#tigo';
       projectLabel.style.pointerEvents = 'auto';
     } else if (currentIndex === 3) {
-      projectLabel.textContent = 'KoraClick';
-      projectLabel.href = 'projects.html#kora';
+      projectLabel.textContent = 'Vistopedia';
+      projectLabel.href = 'projects.html#vistopedia';
       projectLabel.style.pointerEvents = 'auto';
-     } else {
+    } else {
       projectLabel.textContent = '';
       projectLabel.removeAttribute('href');
       projectLabel.style.pointerEvents = 'none';
