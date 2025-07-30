@@ -610,7 +610,6 @@ button {
 
 .visit-site-btn {
   display: inline-block;
-  margin-top: 1.2rem;
   padding: 0.7em 2em;
   background: linear-gradient(90deg, #60a5fa, #a855f7);
   color: #fff;
@@ -625,6 +624,36 @@ button {
 }
 .visit-site-btn:hover, .visit-site-btn:focus {
   background: linear-gradient(90deg, #a855f7, #60a5fa);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Project Buttons Container */
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Readme Button */
+.readme-btn {
+  display: inline-block;
+  padding: 0.7em 2em;
+  background: linear-gradient(90deg, #10b981, #059669);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 2em;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(16,185,129,0.10);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.readme-btn:hover, .readme-btn:focus {
+  background: linear-gradient(90deg, #059669, #10b981);
   transform: translateY(-2px) scale(1.04);
 }
 
@@ -1205,7 +1234,20 @@ button {
     max-height: 44px;
     border-radius: 7px;
   }
+  .project-buttons {
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
   .visit-site-btn {
+    padding: 0.6em 1em;
+    font-size: 0.9rem;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 1.5em;
+  }
+  
+  .readme-btn {
     padding: 0.6em 1em;
     font-size: 0.9rem;
     min-width: 44px;
