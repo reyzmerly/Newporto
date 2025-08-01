@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navArrows = document.querySelectorAll('.nav-arrow');
     const counter = document.querySelector('.portfolio-counter .current');
     let currentProject = 1;
-    const totalProjects = 5;
+    const totalProjects = 6;
 
     navArrows.forEach((arrow, index) => {
         arrow.addEventListener('click', function() {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const counter = document.querySelector('.portfolio-counter .current');
         const progressBar = document.querySelector('.portfolio-progress-bar');
         let currentProject = 1;
-        const totalProjects = 5;
+        const totalProjects = 6;
     
         function updateProgress() {
             counter.textContent = currentProject.toString().padStart(2, '0');
@@ -67,7 +67,8 @@ const projects = [
   "Project 2", 
   "Project 3",
   "Project 4",
-  "Project 5"
+  "Project 5",
+  "Project 6"
 ];
 
 let currentIndex = 0;
@@ -103,6 +104,10 @@ function updatePortfolio() {
     } else if (currentIndex === 4) {
       projectLabel.textContent = 'KoraChat';
       projectLabel.href = 'projects.html#korachat';
+      projectLabel.style.pointerEvents = 'auto';
+    } else if (currentIndex === 5) {
+      projectLabel.textContent = 'UbuntuMind AI';
+      projectLabel.href = 'projects.html#ubuntumind';
       projectLabel.style.pointerEvents = 'auto';
     } else {
       projectLabel.textContent = '';
