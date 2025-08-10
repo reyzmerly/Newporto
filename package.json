@@ -1,0 +1,23 @@
+{
+  "name": "newporto",
+  "version": "1.0.0",
+  "description": "A modern, responsive personal portfolio website for Jean Remy R. (\"Reyz\"), showcasing projects, skills, and contact information. Built with HTML, CSS, and JavaScript.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyzmerly/Newporto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reyzmerly/Newporto/issues"
+  },
+  "homepage": "https://github.com/reyzmerly/Newporto#readme",
+  "dependencies": {
+    "convex": "^1.25.4"
+  }
+}
