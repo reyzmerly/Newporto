@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reyz - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
     <div id="loading-overlay">
@@ -16,7 +16,7 @@
             <div class="logo">Portfolio</div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="index.html" active>HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
                     <li><a href="blog.html">BLOG</a></li>
@@ -32,7 +32,7 @@
         <!-- Profile photo centered below nav -->
         <div class="profile-photo-nav-center" style="display: flex; justify-content: center; margin: 2rem 0;">
             <aside class="profile-area" aria-label="Profile image">
-                <img src="reyz.jpg" alt="Rey Zmerly profile photo" class="profile-img" />
+                <img src="src/assets/image/reyz.jpg" alt="Rey Zmerly profile photo" class="profile-img" />
             </aside>
         </div>
 
@@ -42,7 +42,7 @@
                 <h1 class="name">REYZ MERLY</h1>
                 <p class="title">Developer / Designer <br><i>And IT Specialist</i></p>
                 <div class="cta-row">
-                  <a href="contact.html#contact-form" class="cta-button">Contact</a>
+                  <a href="contact.html" class="cta-button">Contact</a>
                   <a href="https://drive.google.com/file/d/1Nnm3-jaEsXs-iKEqmQE8xUxMI8U-xh5Y/view?usp=sharing" class="cta-button" target="_blank" rel="noopener">Download CV</a>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     <button id="nextBtn" class="portfolio-arrow">&#8594;</button>
                 </div>
                 <div class="portfolio-label-container">
-                    <a id="projectLabel" href="projects.html#movik">Movik GoLive</a>
+                    <a id="projectLabel" href="projects.html">Movik GoLive</a>
                 </div>
                 <!-- Removed portfolio-thumbnails section -->
             </div>
@@ -97,7 +97,9 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="src/script.js"></script>
+</script>
+         <script type="module" src="src/counter.js"></script>
 </body>
 </html>
  <!-- Those codes are protected and cannot be used without permission
