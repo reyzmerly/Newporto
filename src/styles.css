@@ -1362,6 +1362,50 @@ button {
   height: 200px;
   object-fit: cover;
 }
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 15px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.intro-video-section {
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.intro-video-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ffffff, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
 .lightbox {
   display: none;
   position: fixed;
@@ -1430,5 +1474,39 @@ button {
   from {opacity: 0; transform: scale(0.9);}
   to {opacity: 1; transform: scale(1);}
 }
+/* Mobile responsiveness for blog page */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery-item img,
+  .gallery-item video {
+    max-width: 100%;
+    height: 150px;
+  }
+
+  .video-wrapper {
+    padding-bottom: 56.25%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .intro-video-section {
+    padding: 20px 10px;
+  }
+
+  .gallery-section {
+    padding: 0 10px 40px 10px;
+  }
+}
+
 /* <!-- Those codes are protected and cannot be used without permission
   Please contact @reyzmerly2025 for any questions or inquiries or collaboration : reyzmerly9@gmail.com -->*/
