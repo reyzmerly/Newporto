@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   build: {
-    minify: 'esbuild', // use esbuild instead of terser
-    sourcemap: false
+    sourcemap: false,   // disable source maps for production
+    minify: 'terser',   // minify JS/CSS
   }
 })

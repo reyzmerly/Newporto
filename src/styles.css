@@ -751,9 +751,8 @@ button {
 
 .about-profile-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 2.5rem;
   margin: 3rem auto 2.5rem auto;
   max-width: 900px;
@@ -842,6 +841,42 @@ button {
   background-clip: text;
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+.documents-folder {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.folder-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(90deg, #60a5fa, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.documents-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.documents-list li {
+  margin-bottom: 0.5rem;
+}
+
+.documents-list a {
+  color: #e0e7ef;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.documents-list a:hover {
+  color: #a855f7;
 }
 
 /* Extra small devices (phones, 320px-480px) */
@@ -1260,6 +1295,140 @@ button {
     min-height: 44px;
   }
 }
+.intro-video-section {
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
 
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+/* container for video to maintain aspect ratio */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+/* iframe to fill the container */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  rotate: 0.01deg; /* Fixes some rendering issues in certain browsers */
+
+
+}
+.gallery-section {
+  padding: 0 20px 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.gallery-item {
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: #020617;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  animation: fadeIn 0.5s ease;
+}
+
+.popup-buttons {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #6366f1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #94a3b8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
 /* <!-- Those codes are protected and cannot be used without permission
   Please contact @reyzmerly2025 for any questions or inquiries or collaboration : reyzmerly9@gmail.com -->*/

@@ -248,6 +248,31 @@ window.addEventListener('load', function() {
     }, 5000); // 5 seconds (user set to 4s)
   }
 });
+// Animate intro video section on scroll about.html page
+const videoSection = document.querySelector('.intro-video-section');
+
+window.addEventListener('scroll', () => {
+  const rect = videoSection.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 100) {
+    videoSection.style.opacity = 1;
+    videoSection.style.transform = 'translateY(0)';
+  }
+});
+const images = document.querySelectorAll('.gallery-item img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.close');
+
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'block';
+    lightboxImg.src = img.src;
+  });
+});
+
+closeBtn.onclick = () => {
+  lightbox.style.display = 'none';
+};
 
 // <!-- Those codes are protected and cannot be used without permission 
 // Please contact @reyzmerly2025 for any questions or inquiries or collaboration : reyzmerly9@gmail.com
